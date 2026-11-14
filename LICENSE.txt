@@ -1,12 +1,13 @@
-Copyright (c) 2026 Harith Alhamdani. All Rights Reserved.
+Copyright (c) 2026 ZAPPS SOFTWARE LTD. All Rights Reserved.
+Development team: H Alhamdani and Mesar Hameed.
 
 Software: ZBox
 
 1. GRANT OF PERSONAL LICENSE
 Permission is hereby granted to individuals to download, install, and use
 official builds of this software ("ZBox") published by the copyright
-holder, including beta and pre-release builds published on the ZBox
-releases page, free of charge, solely for personal, private,
+holder, including beta and pre-release builds published on the ZApps
+website (https://zapps.ltd), free of charge, solely for personal, private,
 non-commercial use on devices owned or controlled by the user. This free
 grant covers the features that work without a license key (the Free
 Edition); see Section 7 for Pro features. An individual may also take
@@ -227,7 +228,19 @@ contains the following, each redistributed under its own license.
   spell check. Its copyright notices and license travel with it as
   vendor/dictionary/README_en_US-large.txt. https://wordlist.aspell.net
 
+  pypstreader -- reads Outlook data files (.pst, Outlook 2003 and later)
+  for Import Mail from Other Programs; pure Python, used unmodified.
+  Copyright (c) the pypstreader authors. License: MIT.
+  https://github.com/justanyone/pypstreader
+  Parts of it are derived from outlook-pst-rs, Microsoft's reader for
+  Outlook data files. Copyright (c) Microsoft Corporation. License: MIT.
+  https://github.com/microsoft/outlook-pst-rs
+
   Microsoft Edge WebView2 Runtime -- renders HTML messages. Not part of
   ZBox's own code: it is either already present in Windows or included
   unmodified as a fixed-version runtime, and is governed by the Microsoft
   Software License Terms that accompany it.
+
+  pywinrt -- Windows Runtime access, used only in the Microsoft Store
+  build, for its startup task (Run ZBox when Windows starts). License:
+  MIT. https://github.com/pywinrt/pywinrt

@@ -1,11 +1,12 @@
 # ZBox
 
-Portable, snappy, secure, accessible email client for Windows.
+Snappy, secure, accessible email client for Windows.
 
 **Testing beta. Windows only.** Not a finished release: things will
 break, and that is what this build is for.
 
-ZBox is a portable, snappy, secure and fully accessible email client.
+ZBox is a snappy, secure and fully accessible email client, made by
+ZAPPS SOFTWARE LTD (development team: H Alhamdani and Mesar Hameed).
 It was created to give everyone who uses it, including blind and
 low-vision users, a real, feature-packed alternative to the bloated
 and sluggish options usually available. Accessibility is built in
@@ -28,7 +29,7 @@ voice, rate and settings.
 4. [First run](#first-run)
 5. [Linking an account](#linking-an-account)
 6. [The master password, and moving the folder](#the-master-password-and-moving-the-folder)
-7. [Private mode](#private-mode)
+7. [Private No-Trace](#private-no-trace)
 8. [HTML mail](#html-mail)
 9. [Keyboard shortcuts](#keyboard-shortcuts)
 10. [Interface languages](#interface-languages)
@@ -39,12 +40,10 @@ voice, rate and settings.
 
 ## Getting it
 
-Download the zip from the [Releases](../../releases) page, unzip it
-anywhere you like, and run `ZBox.exe`.
+Download the zip from [ZApps](https://zapps.ltd), unzip it anywhere
+you like, and run `ZBox.exe`.
 
-ZBox is closed-source freeware, free for personal use.
-
-Downloads and updates: https://github.com/iqdz/ZBox/releases
+Downloads and updates: go to https://zapps.ltd for ZBox and other apps downloads.
 
 There is no installer. The whole folder is the app: put it on a USB
 stick, an external drive or your desktop, and it writes nothing
@@ -54,6 +53,106 @@ behind if you delete the folder.
 ## What's new
 
 In this version:
+
+1. Private mode is now Private No-Trace, set for a portable copy made
+   with Tools, Portable Private Pro Features (trial testing). That tab
+   makes a copy for a USB stick or another drive: with your accounts
+   and the master password on, with the master password off, or a new,
+   empty copy. A shield badge and the window title show when Private
+   No-Trace is on. The Windows+Ctrl+Shift+P hotkey is gone. See
+   Private No-Trace below.
+2. Hide ZBox from screen recording and sharing, on in a Private
+   No-Trace copy. It cannot stop a camera pointed at the screen, and
+   it does not touch a keylogger or other spyware already on the
+   computer.
+3. Export Accounts and Settings can carry the account passwords and
+   Microsoft sign-ins, protected by a password you type; Import asks
+   for it.
+4. Create Filter from Message, in the Message menu and as Message
+   Filter in the message list's context menu, starts a filter rule
+   from the sender, as in Thunderbird.
+5. Adding an account finds the mail servers of domains ZBox does not
+   know from their DNS records. Ports 993 and 465 always use SSL/TLS.
+6. A missing Drafts or Sent folder is created on the server the first
+   time it is needed.
+7. Setup can go on without a master password.
+8. The licence page lists every third-party component and its licence
+   in one 3rd Party Licenses list.
+9. A new look: three new themes, Neon, Aurora and Pulse, and the other
+   themes retuned with stronger contrast. Each theme colours the title
+   bars on Windows 11, draws a glow line above the tabs and shows
+   unread messages and folders in its accent colour. Windows fade in
+   and out, and the tray icon shows unread mail and glows when new
+   mail arrives. All of it is for the eye only and never changes what
+   a screen reader reads. It stays off with Windows High Contrast, and
+   nothing moves when Windows animations are off.
+10. Import Mail from Other Programs, in Tools, Import and Export, free
+    in every edition. It reads Thunderbird (an exported backup zip
+    file, Thunderbird Portable or a profile folder, with its accounts,
+    address books and saved passwords), .mbox files, a folder of .eml
+    files, Outlook data files (.pst, Outlook 2003 and later), Outlook
+    Express (.dbx) and Windows Live Mail, chosen by hand or found
+    automatically. IMAP accounts are added and their mail stays on the
+    server; the rest is copied into Local Folders or into any
+    account's server, Outlook.com and Hotmail included. It can be
+    stopped and run again, and nothing is copied twice.
+11. Local Folders, mail kept in ZBox's own folder, last in the folder
+    tree in every view and closed, with an Inbox and a Trash folder.
+    Move To and Copy To work between Local Folders and your accounts.
+    It is never offered under Private No-Trace, and a portable copy
+    warns that Local Folders is not encrypted.
+12. View, Folders, Combined (Pro, in trial testing): the Unified
+    Folders on top, then every account and Local Folders.
+13. A folder you have opened once opens at once from a header index
+    kept in ZBox's cache folder, and ZBox then fetches only new
+    messages, changed flags and removals. Clear Offline Message Cache
+    Now clears it. It is not kept under Private No-Trace.
+14. Search looks through all accounts at the same time, much faster,
+    and each result shows the account and folder it is in.
+15. Without a screen reader ZBox stays silent. With Windows Magnifier
+    or ZoomText running and speech on in Settings, it uses the Windows
+    voice.
+16. Pin to Top (Pro, trial testing), in a folder's context menu,
+    lists that folder again at the very top of the folder tree, with
+    its account's name and its unread count.
+17. Sync with Inbox (Pro, trial testing), in a folder's context menu,
+    shows that folder's unread messages in its account's Inbox and in
+    the Unified Inbox, each ending with the folder's name. Nothing
+    changes on the server.
+18. Help, About ZBox opens the About page in your web browser, with
+    links to ZApps, ZBox support, Google App Passwords and the License
+    page.
+19. Update checks ask the ZApps website, are off unless you turn them
+    on, and ask once before the first check. A newer version is shown
+    with a link to ZApps; ZBox downloads nothing by itself.
+20. When a server refuses an account's password, ZBox tries again
+    after 10 seconds, after 10 more, then twice 20 seconds apart, then
+    stops trying that account. The folder tree says "(sign-in failed)"
+    after its name until a sign-in works, you correct it in Account
+    and Identities Settings, or ZBox starts again.
+21. A faster start: the Windows voice is prepared only when it is
+    needed.
+22. Himalaya 2.2.1: a Bcc address is no longer visible to the other
+    recipients.
+23. JMAP accounts. Add Account has a Server type choice on its server
+    page: IMAP and SMTP, or JMAP. For JMAP, ZBox finds the server's
+    address from your email address where the provider publishes it;
+    sign in with your password, an app password or an API token. New
+    mail arrives through the server's own push, and everything else
+    works as for IMAP accounts.
+24. Servers that accept only older encryption, Spectrum's among them,
+    are reached through a bridge inside ZBox on your computer. The
+    connection to the server stays encrypted and its certificate is
+    checked; other servers are not affected. ZBox finds such servers
+    by itself when one drops the connection while it is being secured.
+25. Spectrum addresses: roadrunner.com, bresnan.net, adelphia.net,
+    elmore.rr.com and twmi.rr.com are recognised, and for a linked
+    pair such as berkshire.rr.com Add Account fills in the first
+    address, nycap.rr.com, as the login email.
+26. All of this in every interface language, and in the user guide.
+
+<details>
+<summary>Earlier: testing beta 26.10.11</summary>
 
 1. Templates, as in Thunderbird and Outlook. Compose, Save as Template
    keeps the message you are writing in the Templates folder of its
@@ -76,6 +175,8 @@ In this version:
 7. Ctrl+Shift+F opens Search again after the Search tab was closed.
 8. All of this in every interface language, and in the user guide.
 
+</details>
+
 <details>
 <summary>Earlier: testing beta 26.10.09</summary>
 
@@ -97,7 +198,8 @@ In this version:
    Signed and encrypted S/MIME mail opens with its status above the
    message. Sending S/MIME mail comes later.
 3. Private mode, for using ZBox from a USB drive on a computer that
-   is not yours. See Private mode below.
+   is not yours. It is now Private No-Trace; see Private No-Trace
+   below.
 4. Outlook.com, Hotmail, Live and MSN accounts work through Microsoft
    Graph, so IMAP no longer has to be turned on in Outlook.com.
 5. A Search tab (Ctrl+Shift+F): words in every account or one folder,
@@ -167,11 +269,19 @@ In this version:
   Microsoft 365. Personal Microsoft accounts work through Microsoft
   Graph.
 - Gmail and others with an app password.
+- JMAP accounts, such as Fastmail with an API token, with new mail
+  through the server's own push.
+- Servers that accept only older encryption, such as Spectrum's,
+  through a bridge on your computer, with the connection to the
+  server still encrypted and checked.
 - Sent, Drafts, Trash, Junk and Archive found from your server's own
   markings, in any language.
 - Extra identities, each with its own signature, Reply-To address,
   Cc and Bcc, Drafts and Sent folders and outgoing server.
 - Mute, pause or disable an account.
+- Import mail, accounts and address books from Thunderbird, Outlook,
+  Outlook Express, Windows Live Mail, .mbox files and .eml files, free
+  in every edition.
 
 ### Reading mail
 
@@ -180,7 +290,12 @@ In this version:
 - Threads, a conversation view, and related messages across folders.
 - Watch Thread and Ignore Thread, with filters for watched and ignored
   threads.
-- Unified folders that combine one folder type from every account.
+- Unified folders that combine one folder type from every account, and
+  a Combined view with them on top and every account below.
+- Local Folders for mail kept on your computer, last in every folder
+  view.
+- Folders you have opened open at once from a header index, and then
+  only what changed is fetched.
 - Sort By and Columns for the message list.
 - Message headers above the message, a message font size and reading
   font of your own, and the sender announced with Ctrl+U.
@@ -205,10 +320,13 @@ In this version:
   flagged and attachments, with every message action on the results.
 - Message filters, Block This Sender and Unblock This Sender.
 - Move or copy messages by typing part of a folder name.
+- Move or copy messages between your accounts and Local Folders.
 - Undo (Ctrl+Z) for delete, archive and junk actions.
 - Subscribe to server folders, mark a folder read, empty Trash and
   Junk, or let ZBox clear old Trash and Junk after the number of days
   you choose.
+- Pin a folder to the top of the folder tree, or show its unread
+  messages in the Inbox (Pro, trial testing).
 
 ### Security and privacy
 
@@ -218,7 +336,9 @@ In this version:
 - S/MIME: signed and encrypted mail read and sent with your own
   certificate from the S/MIME Certificate Manager, and certificates
   checked for revocation.
-- Private mode for reading mail on a computer that is not yours.
+- Private No-Trace, for reading mail from a portable copy on a
+  computer that is not yours, and ZBox hidden from screen recording
+  and sharing.
 - Remote content blocked by default, an ad and tracker blocklist, a
   phishing link check, and optional junk rules that never guess.
 - App lock with a Windows Hello passkey, a FIDO2 security key or the
@@ -230,15 +350,16 @@ In this version:
 
 - One folder, no installer, nothing written outside it.
 - An offline copy of the Inbox and the Archive.
-- Updates found and installed by ZBox itself, put back automatically
-  if a new version fails to start. Ask first, or download and install
-  quietly.
-- Export and import your accounts and settings. Passwords are never
-  exported.
+- Optional update checks through the ZApps website, off unless you
+  turn them on.
+- Export and import your accounts and settings, with their passwords
+  protected by a password you choose, or without them.
+- Portable copies for a USB stick or another drive, from Tools,
+  Portable Private Pro Features.
 - Minimize or close to the system tray, start with Windows, stay
   maximized, and a desktop shortcut.
 - Settings for how long cached messages are kept.
-- Six interface themes, and sound themes you can add your own to.
+- Nine interface themes, and sound themes you can add your own to.
 - 50 interface languages, listed under Interface languages below.
 
 ## First run
@@ -246,7 +367,8 @@ In this version:
 1. A licence appears before anything else. Decline and ZBox exits
    and removes the empty folder it was about to create.
 2. You are asked to set a master password. Do it, and write it down
-   somewhere safe. See the warning below.
+   somewhere safe. See the warning below. Continue setup without a
+   master password goes on without one.
 3. The New Account wizard opens.
 
 ## Linking an account
@@ -280,8 +402,8 @@ or Advanced Protection account that does not allow app passwords.
 
 Changing your Google password cancels every app password. Create a
 new one the same way, and enter it in Tools > Account and Identities
-Settings, in the New password field. Help > About ZBox has a button
-that opens Google's own app password instructions.
+Settings, in the New password field. The About page (Help > About
+ZBox) links to Google's own app password instructions.
 
 ### Outlook.com, Hotmail, Live and Microsoft 365
 
@@ -323,20 +445,31 @@ ZBox also recognises each computer by a fingerprint. Open the folder
 on a machine it does not know and it locks and asks for the master
 password, then remembers that machine.
 
-## Private mode
+## Private No-Trace
 
 For reading mail from a USB drive on a computer that is not yours.
-Turn it on in Settings, App and Data Security, or press
-Windows+Ctrl+Shift+P from any program. It needs a master password,
-asks for it, and warns before it starts.
+Make the copy with Tools, Portable Private Pro Features: choose a copy
+with accounts and the master password on, check Private No-Trace,
+choose the target folder and press Create Portable ZBox. The copy
+starts in Private No-Trace. A shield badge shows at the top of the
+window, the title ends with Private No-Trace, and the first item in
+Tools says so.
 
 While it is on, ZBox reads your mail from the server and keeps it in
-memory only. No offline copies, saved messages or debug logs are
-kept. Opened attachments and the browser data of HTML mail are
-deleted when ZBox closes. Closing also ends the programs ZBox
-started, empties the clipboard, and stops trusting the computer,
-unless private mode was turned on from it. If the drive is lost, only
-encrypted files are left on it.
+memory only. No offline copies, saved messages or debug logs are kept,
+and Offline, Synchronize Now and the cache clean-up options are off.
+Opened attachments and the browser data of HTML mail are deleted when
+ZBox closes. Closing also ends the programs ZBox started, empties the
+clipboard, and stops trusting the computer, unless Private No-Trace
+was turned on from it. If the drive is lost, only encrypted files are
+left on it.
+
+Hide ZBox from screen recording and sharing is on in such a copy:
+screen recorders and sharing tools such as OBS, Teams and the Snipping
+Tool see ZBox as blank, while you see it normally. It cannot stop a
+camera pointed at the screen, and it does not touch a keylogger or
+other spyware already on the computer. Turn it off in the tab if it
+gets in the way of remote support.
 
 Limits: Windows itself keeps some records no program can remove, such
 as its list of USB drives, the page file, and antivirus and network
@@ -375,8 +508,6 @@ The same list is in ZBox under Help, Keyboard Shortcuts (F1).
 - Ctrl+Shift+Q: exit ZBox, even when Close to the system tray is on.
 - Ctrl+Shift+Delete: clear the offline message cache (ZBox's own
   copies only, nothing on any server).
-- Windows+Ctrl+Shift+P, from any program: open the Private mode
-  switch.
 
 ### Mail
 
@@ -517,9 +648,9 @@ what it should say.
 The full ZBox privacy policy, word for word. The same text is in
 [PRIVACY.md](PRIVACY.md).
 
-Effective date: 1 October 2026
+Effective date: 12 November 2026
 
-ZBox is a portable email client for Windows, made by Harith Alhamdani. This policy explains what ZBox does with your information. In short: ZBox collects nothing. It has no analytics, no telemetry, no advertising, no user accounts with the developer, and no servers of its own.
+ZBox is an email client for Windows, made by ZAPPS SOFTWARE LTD (development team: H Alhamdani and Mesar Hameed). This policy explains what ZBox does with your information. In short: ZBox collects nothing. It has no analytics, no telemetry, no advertising, no user accounts with the developer, and no servers of its own.
 
 ### 1. What stays on your computer
 
@@ -537,7 +668,7 @@ Your mail servers. To receive and send your mail, ZBox connects to the mail serv
 
 Microsoft sign-in. For Outlook.com, Hotmail, Live and Microsoft 365 accounts, you sign in on Microsoft's own page, in your browser or with a code. ZBox receives a sign-in token from Microsoft and stores it encrypted on your computer. ZBox never sees your Microsoft password. Microsoft's privacy statement applies to the sign-in itself.
 
-Update checks. ZBox can check its public GitHub repository for a newer version, and download it if you choose to install it. This is optional. You can turn automatic checks off and check by hand instead. GitHub receives only what any web request carries, such as your IP address. GitHub's privacy statement applies.
+Update checks. ZBox can check the ZApps website (https://zapps.ltd) for a newer version. This is off unless you turn it on, and ZBox asks once before its first check. It downloads nothing by itself: a newer version is shown with a link to the website. The website receives only ZBox's version number and what any web request carries, such as your IP address. The Microsoft Store version is updated by the Microsoft Store.
 
 Blocklist updates. ZBox's tracker, ad and phishing protection uses public blocklists. When blocklist updates are on, ZBox downloads newer copies of these lists from their publishers. This is optional and can be turned off in Settings. Nothing about you or your mail is sent.
 
@@ -571,12 +702,12 @@ Any change to this policy is published in ZBox's GitHub repository, with a new e
 
 ### 7. Contact
 
-Harith Alhamdani
-harith@gvoice.org
+ZAPPS SOFTWARE LTD
+support@zapps.ltd
 
 ## Reporting a bug
 
-Email **harith@gvoice.org**. Not GitHub issues.
+Email **support@zapps.ltd**. Not GitHub issues.
 
 What helps:
 
@@ -597,10 +728,11 @@ provider. You can read the log before you send it.
 ## Licence
 
 The full ZBox licence. The same text is in
-`docs\LICENSE.txt`, and in ZBox under Help > About ZBox > View
-License.
+`docs\LICENSE.txt`, and in ZBox on the License page that Help >
+About ZBox links to.
 
-Copyright (c) 2026 Harith Alhamdani. All Rights Reserved.
+Copyright (c) 2026 ZAPPS SOFTWARE LTD. All Rights Reserved.
+Development team: H Alhamdani and Mesar Hameed.
 
 Software: ZBox
 
@@ -608,8 +740,8 @@ Software: ZBox
 
 Permission is hereby granted to individuals to download, install, and use
 official builds of this software ("ZBox") published by the copyright
-holder, including beta and pre-release builds published on the ZBox
-releases page, free of charge, solely for personal, private,
+holder, including beta and pre-release builds published on the ZApps
+website (https://zapps.ltd), free of charge, solely for personal, private,
 non-commercial use on devices owned or controlled by the user. This free
 grant covers the features that work without a license key (the Free
 Edition); see Section 7 for Pro features. An individual may also take
@@ -774,6 +906,16 @@ own code, never to these components, which keep their own licences.
 12. [keyring](https://github.com/jaraco/keyring), read only, to move a
     password from an older ZBox. Copyright Jason R. Coombs. MIT
     License.
+13. [pywinrt](https://github.com/pywinrt/pywinrt), Windows Runtime
+    access for the startup task, in the Microsoft Store build only.
+    MIT License.
+14. [pypstreader](https://github.com/justanyone/pypstreader), which
+    reads Outlook data files (.pst) for Import Mail from Other
+    Programs. MIT License.
+15. [outlook-pst-rs](https://github.com/microsoft/outlook-pst-rs),
+    Microsoft's reader for Outlook data files, from which parts of
+    pypstreader are derived. Copyright Microsoft Corporation. MIT
+    License.
 
 ### Downloaded while ZBox runs, never bundled
 
@@ -792,5 +934,5 @@ own code, never to these components, which keep their own licences.
    License Terms.
 
 Each component is also listed, with its licence and where it comes
-from, in `docs\LICENSE.txt` and under Help > About ZBox > View
-License.
+from, in `docs\LICENSE.txt` and on the License page that Help >
+About ZBox links to.

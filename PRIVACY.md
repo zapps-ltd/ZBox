@@ -1,14 +1,16 @@
 # ZBox Privacy Policy
 
-Effective date: 1 October 2026
+Effective date: 12 November 2026
 
-ZBox is a portable email client for Windows, made by Harith Alhamdani. This policy explains what ZBox does with your information. In short: ZBox collects nothing. It has no analytics, no telemetry, no advertising, no user accounts with the developer, and no servers of its own.
+ZBox is an email client for Windows, made by ZAPPS SOFTWARE LTD (development team: H Alhamdani and Mesar Hameed). This policy explains what ZBox does with your information. In short: ZBox collects nothing. It has no analytics, no telemetry, no advertising, no user accounts with the developer, and no servers of its own.
 
 ## 1. What stays on your computer
 
 Everything ZBox keeps is stored inside the ZBox folder on your own computer or drive: your account settings, the copies of your mail, your contacts, your settings, and your saved passwords and Microsoft sign-in tokens.
 
 Passwords and sign-in tokens are encrypted with Windows' own protection, and also with your master password if you set one. They never leave your computer, except to sign you in to your own mail provider.
+
+ZBox also keeps a small encrypted note of when this copy of ZBox was first used, when an account first received mail, and the date and time stated in the ZApps website's replies to update checks. It is for licensing, stays with ZBox's own files and is never sent anywhere.
 
 The developer has no access to any of this, and none of it is sent anywhere.
 
@@ -20,7 +22,7 @@ Your mail servers. To receive and send your mail, ZBox connects to the mail serv
 
 Microsoft sign-in. For Outlook.com, Hotmail, Live and Microsoft 365 accounts, you sign in on Microsoft's own page, in your browser or with a code. ZBox receives a sign-in token from Microsoft and stores it encrypted on your computer. ZBox never sees your Microsoft password. Microsoft's privacy statement applies to the sign-in itself.
 
-Update checks. ZBox can check its public GitHub repository for a newer version, and download it if you choose to install it. This is optional. You can turn automatic checks off and check by hand instead. GitHub receives only what any web request carries, such as your IP address. GitHub's privacy statement applies.
+Update checks. ZBox can check the ZApps website (https://zapps.ltd) for a newer version. This is off unless you turn it on, and ZBox asks once before its first check. It downloads nothing by itself: a newer version is shown with a link to the website. The website receives only ZBox's version number and what any web request carries, such as your IP address. The Microsoft Store version is updated by the Microsoft Store.
 
 Blocklist updates. ZBox's tracker, ad and phishing protection uses public blocklists. When blocklist updates are on, ZBox downloads newer copies of these lists from their publishers. This is optional and can be turned off in Settings. Nothing about you or your mail is sent.
 
@@ -54,5 +56,5 @@ Any change to this policy is published in ZBox's GitHub repository, with a new e
 
 ## 7. Contact
 
-Harith Alhamdani
-harith@gvoice.org
+ZAPPS SOFTWARE LTD
+support@zapps.ltd
