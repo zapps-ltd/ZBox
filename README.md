@@ -2,22 +2,39 @@
 
 Snappy, secure, accessible email client for Windows.
 
-**Testing beta. Windows only.** Not a finished release: things will
-break, and that is what this build is for.
+**Release candidate RC26.11.15. Windows only.** The last testing
+build before the stable release. It is close to finished, and your
+reports help us get the last details right.
 
 ZBox is a snappy, secure and fully accessible email client, made by
-ZAPPS SOFTWARE LTD (development team: H Alhamdani and Mesar Hameed).
-It was created to give everyone who uses it, including blind and
-low-vision users, a real, feature-packed alternative to the bloated
-and sluggish options usually available. Accessibility is built in
-from the start, not added later: no decorative chrome, every control
-named, every important state also given as text, and the HTML message
-view tamed so a screen reader gets the message and nothing else. It
-is tested with NVDA and JAWS.
+ZAPPS SOFTWARE LTD (development team: Harith and Mesar).
+We made it to give everyone, blind and low-vision users included, a
+real, feature-packed alternative to the bloated and sluggish email
+programs out there. Accessibility is built in from the start, not
+added later: no decorative clutter, every control named, every
+important state also given as text, and HTML mail tamed so your
+screen reader gets the message and nothing else. It is tested with
+NVDA and JAWS.
 
-It has no speech of its own and never will. Announcements are handed
-to whichever screen reader is running, which speaks them in your own
-voice, rate and settings.
+ZBox has no speech of its own and never will. Announcements go to
+whichever screen reader you are running, in your own voice, rate and
+settings.
+
+What you get, in short:
+
+- Gmail, Outlook.com, Microsoft 365, JMAP and any IMAP account, side
+  by side, with unified folders, threads, search across every
+  account, filters, templates and an address book.
+- Mail brought over from Thunderbird, Outlook, Outlook Express,
+  Windows Live Mail, .mbox and .eml files, free in every edition.
+- OpenPGP and S/MIME encryption and signing, remote content blocked
+  by default, a tracker, ad and phishing check, and an app lock with
+  Windows Hello, a security key or your master password.
+- One portable folder with no installer, and Private No-Trace for
+  reading your mail from a USB stick on a computer that is not yours.
+- 50 interface languages, nine themes, and sound themes of your own.
+- No analytics, no telemetry, no advertising. See the privacy policy
+  below.
 
 ## [Keyboard shortcuts: jump to the full list](#keyboard-shortcuts)
 
@@ -30,13 +47,14 @@ voice, rate and settings.
 5. [Linking an account](#linking-an-account)
 6. [The master password, and moving the folder](#the-master-password-and-moving-the-folder)
 7. [Private No-Trace](#private-no-trace)
-8. [HTML mail](#html-mail)
-9. [Keyboard shortcuts](#keyboard-shortcuts)
-10. [Interface languages](#interface-languages)
-11. [Privacy policy](#privacy-policy)
-12. [Reporting a bug](#reporting-a-bug)
-13. [Licence](#licence)
-14. [Credits and third-party components](#credits-and-third-party-components)
+8. [Pro features and licenses](#pro-features-and-licenses)
+9. [HTML mail](#html-mail)
+10. [Keyboard shortcuts](#keyboard-shortcuts)
+11. [Interface languages](#interface-languages)
+12. [Privacy policy](#privacy-policy)
+13. [Reporting a bug](#reporting-a-bug)
+14. [Licence](#licence)
+15. [Credits and third-party components](#credits-and-third-party-components)
 
 ## Getting it
 
@@ -52,7 +70,7 @@ behind if you delete the folder.
 
 ## What's new
 
-In this version:
+In this version, the release candidate RC26.11.15:
 
 1. Private mode is now Private No-Trace, set for a portable copy made
    with Tools, Portable Private Pro Features (trial testing). That tab
@@ -149,7 +167,26 @@ In this version:
     elmore.rr.com and twmi.rr.com are recognised, and for a linked
     pair such as berkshire.rr.com Add Account fills in the first
     address, nycap.rr.com, as the login email.
-26. All of this in every interface language, and in the user guide.
+26. Update checks also look at ZBox's release page on GitHub, so a
+    newer version still shows up if the ZApps website is busy or down.
+    Whichever has the newer version wins.
+27. ZBox checks its own program files each time it starts. If any
+    were changed, it keeps working with the free features and tells
+    you it is best to download it again from ZApps.
+28. Pro features in this release candidate: everyone already using
+    ZBox with an account by 1 December 2026 keeps the Pro features for
+    good in the stable release. A copy first used later gets a 15-day
+    trial. On 1 January 2027 this release candidate turns its Pro
+    features off for everyone, so please move to the stable release
+    by then; nothing you have is lost. See Pro features and licenses
+    below.
+29. Help, (Testing) Pro License: a first try of the new license
+    request. Choose a period and press the button: ZBox copies your
+    Installation ID and opens a message to ZApps support with it
+    filled in, ready for you to send.
+30. The privacy policy now covers the GitHub update check, the
+    Installation ID and the optional online Pro activation.
+31. All of this in every interface language, and in the user guide.
 
 <details>
 <summary>Earlier: testing beta 26.10.11</summary>
@@ -350,8 +387,9 @@ In this version:
 
 - One folder, no installer, nothing written outside it.
 - An offline copy of the Inbox and the Archive.
-- Optional update checks through the ZApps website, off unless you
-  turn them on.
+- Optional update checks through the ZApps website and ZBox's GitHub
+  release page, off unless you turn them on.
+- A check of its own program files at every start.
 - Export and import your accounts and settings, with their passwords
   protected by a password you choose, or without them.
 - Portable copies for a USB stick or another drive, from Tools,
@@ -480,6 +518,33 @@ Advice: close every opened attachment yourself before closing ZBox,
 above all those opened with Windows' own programs such as Notepad or
 Windows Media Player. Their processes cannot always be ended without
 extra permissions.
+
+## Pro features and licenses
+
+Most of ZBox is free in every edition, mail import included. The Pro
+features are the Combined folder view, Pin to Top, Sync with Inbox
+and the portable copies with Private No-Trace, from Tools, Portable
+Private Pro Features.
+
+If you were already using ZBox with an account by 1 December 2026,
+you keep the Pro features for good: just move to the stable release
+when it comes out. A copy first used after that gets a 15-day trial.
+This release candidate turns its Pro features off for everyone on
+1 January 2027, to make sure everybody moves to the stable release,
+and nothing you have is lost on the way.
+
+Paid Pro licenses are on their way, for one month, three months, six
+months or a year. A license is a small file you import, so there is
+no long key to type. It works on one computer, matched by the short
+Installation ID that ZBox shows you, and it is checked on your
+computer with no connection needed. If you would rather activate
+online, ZBox checks with the ZApps licensing server only when you
+activate and again as your license's end date comes near, never every
+day. Changing your computer? Ask us, and your license moves to the new
+one with the same end date.
+
+To try the request in this release candidate, use Help, (Testing) Pro
+License.
 
 ## HTML mail
 
@@ -648,9 +713,9 @@ what it should say.
 The full ZBox privacy policy, word for word. The same text is in
 [PRIVACY.md](PRIVACY.md).
 
-Effective date: 12 November 2026
+Effective date: 16 November 2026
 
-ZBox is an email client for Windows, made by ZAPPS SOFTWARE LTD (development team: H Alhamdani and Mesar Hameed). This policy explains what ZBox does with your information. In short: ZBox collects nothing. It has no analytics, no telemetry, no advertising, no user accounts with the developer, and no servers of its own.
+ZBox is an email client for Windows, made by ZAPPS SOFTWARE LTD (development team: Harith and Mesar). This policy explains what ZBox does with your information. In short: ZBox collects nothing. It has no analytics, no telemetry, no advertising and no user accounts with the developer. Your mail is between you and your mail provider.
 
 ### 1. What stays on your computer
 
@@ -658,7 +723,13 @@ Everything ZBox keeps is stored inside the ZBox folder on your own computer or d
 
 Passwords and sign-in tokens are encrypted with Windows' own protection, and also with your master password if you set one. They never leave your computer, except to sign you in to your own mail provider.
 
-The developer has no access to any of this, and none of it is sent anywhere.
+ZBox also keeps a small encrypted note of when this copy of ZBox was first used, when an account first received mail, and the date and time given in the replies to update checks. It is used only to decide which Pro features this copy offers, stays with ZBox's own files and is never sent anywhere.
+
+ZBox checks its own program files for changes each time it starts. The check happens entirely on your computer and sends nothing.
+
+Installation ID. For Pro licenses, ZBox can show a short Installation ID, a code of 25 letters and numbers. It is made from your Windows installation and your system drive and scrambled so that it cannot be turned back into either of them. It only lets a license work on this computer and no other. ZBox shows it to you and never sends it anywhere by itself.
+
+The developer has no access to any of this, and none of it is sent anywhere unless you choose to, as described below.
 
 ### 2. Connections ZBox makes
 
@@ -668,7 +739,9 @@ Your mail servers. To receive and send your mail, ZBox connects to the mail serv
 
 Microsoft sign-in. For Outlook.com, Hotmail, Live and Microsoft 365 accounts, you sign in on Microsoft's own page, in your browser or with a code. ZBox receives a sign-in token from Microsoft and stores it encrypted on your computer. ZBox never sees your Microsoft password. Microsoft's privacy statement applies to the sign-in itself.
 
-Update checks. ZBox can check the ZApps website (https://zapps.ltd) for a newer version. This is off unless you turn it on, and ZBox asks once before its first check. It downloads nothing by itself: a newer version is shown with a link to the website. The website receives only ZBox's version number and what any web request carries, such as your IP address. The Microsoft Store version is updated by the Microsoft Store.
+Update checks. ZBox can look for a newer version on the ZApps website (https://zapps.ltd) and, for now, on ZBox's public release page on GitHub (https://github.com/zapps-ltd/ZBox). This is off unless you turn it on, and ZBox asks once before its first check. It downloads nothing by itself: a newer version is shown with a link to where it lives. The websites receive only ZBox's version number and what any web request carries, such as your IP address. GitHub's privacy statement applies to its part. The Microsoft Store version is updated by the Microsoft Store.
+
+Online Pro activation, only if you choose it. A Pro license normally comes as a license file that ZBox checks on your computer, with no connection at all. If you choose online activation instead, ZBox talks to the ZApps licensing server to confirm that your license is valid: once when you activate it, and after that only as your license's end date comes near. It never checks daily or in the background. It sends only your license number, your Installation ID and ZBox's version number, never anything about your accounts or your mail. If you never choose online activation, ZBox never contacts the licensing server.
 
 Blocklist updates. ZBox's tracker, ad and phishing protection uses public blocklists. When blocklist updates are on, ZBox downloads newer copies of these lists from their publishers. This is optional and can be turned off in Settings. Nothing about you or your mail is sent.
 
@@ -688,6 +761,8 @@ The log stays in the ZBox folder on your computer. ZBox never sends it anywhere.
 
 If you email the developer, your message and address are used only to reply to you and to help with your request. They are not shared with anyone.
 
+When you ask for a Pro license from within ZBox, ZBox opens a new message to support@zapps.ltd with your Installation ID and the license period you chose already filled in. Nothing is sent until you press Send, and it goes from your own mail account like any other message. The developer uses your address, the Installation ID and any license details only to issue your license, keep a record of it and help you with it.
+
 ### 5. Removing your data
 
 To remove an account, use Tools, Remove Account. This deletes its saved password or sign-in token and the copies of its mail on your computer.
@@ -695,6 +770,8 @@ To remove an account, use Tools, Remove Account. This deletes its saved password
 To remove everything, delete the ZBox folder.
 
 For a Microsoft account, you can also withdraw ZBox's access from the app permissions page of your Microsoft account.
+
+To have your license record removed, email support@zapps.ltd.
 
 ### 6. Changes to this policy
 
@@ -732,7 +809,7 @@ The full ZBox licence. The same text is in
 About ZBox links to.
 
 Copyright (c) 2026 ZAPPS SOFTWARE LTD. All Rights Reserved.
-Development team: H Alhamdani and Mesar Hameed.
+Development team: Harith and Mesar.
 
 Software: ZBox
 
@@ -863,7 +940,7 @@ published as official builds only, and this license applies to them.
 
 ## Credits and third-party components
 
-ZBox stands on the work of these projects, with thanks. The terms in
+ZBox is built using these projects, with thanks. The terms in
 Sections 1 to 3 and 7 to 9 of the licence above apply only to ZBox's
 own code, never to these components, which keep their own licences.
 
