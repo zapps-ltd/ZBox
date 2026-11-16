@@ -2,7 +2,7 @@
 
 Snappy, secure, accessible email client for Windows.
 
-**Release candidate RC26.11.15. Windows only.** The last testing
+**Release candidate RC26.11.16. Windows only.** The last testing
 build before the stable release. It is close to finished, and your
 reports help us get the last details right.
 
@@ -70,7 +70,7 @@ behind if you delete the folder.
 
 ## What's new
 
-In this version, the release candidate RC26.11.15:
+In this version, the release candidate RC26.11.16:
 
 1. Private mode is now Private No-Trace, set for a portable copy made
    with Tools, Portable Private Pro Features (trial testing). That tab
