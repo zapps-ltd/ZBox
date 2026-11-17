@@ -141,8 +141,11 @@ In this version, the release candidate RC26.11.16:
     links to ZApps, ZBox support, Google App Passwords and the License
     page.
 19. Update checks ask the ZApps website, are off unless you turn them
-    on, and ask once before the first check. A newer version is shown
-    with a link to ZApps; ZBox downloads nothing by itself.
+    on, and ask once before the first check. A newer version is
+    downloaded and installed as you choose in Settings: after asking
+    you, or silently, at your next exit. Your data is never touched, and
+    the previous version comes back by itself if the new one fails to
+    start.
 20. When a server refuses an account's password, ZBox tries again
     after 10 seconds, after 10 more, then twice 20 seconds apart, then
     stops trying that account. The folder tree says "(sign-in failed)"
@@ -168,7 +171,8 @@ In this version, the release candidate RC26.11.16:
     pair such as berkshire.rr.com Add Account fills in the first
     address, nycap.rr.com, as the login email.
 26. Update checks also look at ZBox's release page on GitHub, so a
-    newer version still shows up if the ZApps website is busy or down.
+    newer version still shows up, and still downloads, if the ZApps
+    website is busy or down.
     Whichever has the newer version wins.
 27. ZBox checks its own program files each time it starts. If any
     were changed, it keeps working with the free features and tells
@@ -387,8 +391,9 @@ In this version, the release candidate RC26.11.16:
 
 - One folder, no installer, nothing written outside it.
 - An offline copy of the Inbox and the Archive.
-- Optional update checks through the ZApps website and ZBox's GitHub
-  release page, off unless you turn them on.
+- Optional updates through the ZApps website and ZBox's GitHub
+  release page, off unless you turn them on, installed after asking
+  you or silently at your next exit.
 - A check of its own program files at every start.
 - Export and import your accounts and settings, with their passwords
   protected by a password you choose, or without them.
@@ -402,12 +407,15 @@ In this version, the release candidate RC26.11.16:
 
 ## First run
 
-1. A licence appears before anything else. Decline and ZBox exits
-   and removes the empty folder it was about to create.
-2. You are asked to set a master password. Do it, and write it down
+1. A list of languages appears first, with the language of your
+   Windows already selected. Choose another one if you like, and
+   press Next.
+2. The licence comes next. Decline and ZBox exits and removes the
+   empty folder it was about to create.
+3. You are asked to set a master password. Do it, and write it down
    somewhere safe. See the warning below. Continue setup without a
    master password goes on without one.
-3. The New Account wizard opens.
+4. The New Account wizard opens.
 
 ## Linking an account
 
@@ -739,7 +747,7 @@ Your mail servers. To receive and send your mail, ZBox connects to the mail serv
 
 Microsoft sign-in. For Outlook.com, Hotmail, Live and Microsoft 365 accounts, you sign in on Microsoft's own page, in your browser or with a code. ZBox receives a sign-in token from Microsoft and stores it encrypted on your computer. ZBox never sees your Microsoft password. Microsoft's privacy statement applies to the sign-in itself.
 
-Update checks. ZBox can look for a newer version on the ZApps website (https://zapps.ltd) and, for now, on ZBox's public release page on GitHub (https://github.com/zapps-ltd/ZBox). This is off unless you turn it on, and ZBox asks once before its first check. It downloads nothing by itself: a newer version is shown with a link to where it lives. The websites receive only ZBox's version number and what any web request carries, such as your IP address. GitHub's privacy statement applies to its part. The Microsoft Store version is updated by the Microsoft Store.
+Update checks. ZBox can look for a newer version on the ZApps website (https://zapps.ltd) and, for now, on ZBox's public release page on GitHub (https://github.com/zapps-ltd/ZBox). This is off unless you turn it on, and ZBox asks once before its first check. When a newer version is found, ZBox downloads it from the ZApps website, or from GitHub when the website cannot send it, as you choose in Settings: after asking you, or silently, to be installed when you next exit ZBox. The websites receive only ZBox's version number and what any web request carries, such as your IP address. GitHub's privacy statement applies to its part. The Microsoft Store version is updated by the Microsoft Store.
 
 Online Pro activation, only if you choose it. A Pro license normally comes as a license file that ZBox checks on your computer, with no connection at all. If you choose online activation instead, ZBox talks to the ZApps licensing server to confirm that your license is valid: once when you activate it, and after that only as your license's end date comes near. It never checks daily or in the background. It sends only your license number, your Installation ID and ZBox's version number, never anything about your accounts or your mail. If you never choose online activation, ZBox never contacts the licensing server.
 

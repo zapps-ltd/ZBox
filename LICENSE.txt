@@ -1,5 +1,5 @@
 Copyright (c) 2026 ZAPPS SOFTWARE LTD. All Rights Reserved.
-Development team: H Alhamdani and Mesar Hameed.
+Development team: Harith and Mesar.
 
 Software: ZBox
 
@@ -167,8 +167,8 @@ rest of ZBox.
   https://github.com/Phishing-Database/Phishing.Database
 
 D. RUNTIME AND LIBRARIES IN A PUBLISHED BUILD
-A build published by the copyright holder is produced with PyInstaller and
-contains the following, each redistributed under its own license.
+Nuitka is used to build the app. A build published by the copyright
+holder contains the following, each redistributed under its own license.
   Python -- the language runtime. Copyright (c) Python Software Foundation.
   License: PSF License Agreement. https://www.python.org
 
